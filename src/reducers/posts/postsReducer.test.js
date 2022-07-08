@@ -13,6 +13,6 @@ describe('Posts Reducer', () => {
       type: types.GET_POSTS,
       payload: newPosts,
     });
-    expect(posts).toBe(newPosts);
+    expect(posts).toStrictEqual(newPosts);
   });
 });
